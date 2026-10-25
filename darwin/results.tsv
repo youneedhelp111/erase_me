@@ -1,2 +1,7 @@
 timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-10-25T12:20	baseline	erase-me	-	61.3	baseline	-	短板(加权):dim3失败模式8.4 dim5具体性7.2 dim8实测6.9 dim9黑名单4.2；runtime_warn=1(README安装路径只给~/.claude)；P1 with-skill优于baseline(保留了"低落时语气温和"偏好，baseline连文件一起删了)；P1残留MEMORY.md索引"情绪—心理状态"；P2/P3按流程停在确认点	full_test
+2026-10-25T12:35	c6ec248	erase-me	-	3-0 better(clear×3)	keep	P0 runtime	README 多工具安装路径表+一行安装；脚本路径改 <skill_dir>	paired
+2026-10-25T12:35	f2a0d81	erase-me	-	3-0 better(clear×3)	keep	dim3/dim4 簇	🔴 CHECKPOINT ×2 + 8 行三段式出错表	paired
+2026-10-25T12:35	393cd45	erase-me	-	3-0 better(clear×2 slight×1)	keep	dim8	按措辞推断模式再确认；清理索引/文件名/描述/空目录残留	paired
+2026-10-25T12:35	0898fb1	erase-me	-	3-0 better(slight×3)	keep	dim9	不要做清单（含禁止 rm -rf 整个 ~/.claude）；连续 slight→HL-4 见好就收	paired
+2026-10-25T12:40	c16a141	erase-me	-	-	spec	需求变更	用户新需求：先问清需求+云端自问自答稀释；非优化轮，不走 paired，走 full_test 复测	-
