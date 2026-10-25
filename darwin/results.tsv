@@ -9,3 +9,4 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-10-25T12:55	full_test	erase-me	-	-	retest	dim8	P1 通过(保留语气偏好、清索引)；P2 只问不改、diff 为空；P3 本地部分通过，稀释阶段测试 agent 被平台安全过滤中断两次	full_test
 2026-10-25T13:15	-	erase-me	-	-	spec	需求变更	用户新需求：只处理云端、删除本地 Python 扫描器、C 模式用虚构身份多轮循环覆盖（上限 100 轮）；旧 rubric 结果不再适用	-
 2026-10-25T13:30	-	erase-me	-	-	spec	需求变更	用户实测反馈：改为渐进漂移（每轮微调上一轮档案、强隐私事件逐级降级后删除）；第 1 步强制先真删聊天和记忆	-
+2026-10-25T13:45	baseline-v3	erase-me	-	72.2	baseline	-	渐进漂移版基线。短板(加权):dim8实测9.2 dim3失败模式4.8。T1停在第1步✓；T3(B)逐级降级后删除✓；T2(C)漂移3轮✓但用户说"删好了"后敏感条目仍在、技能未要求核对；对照组(无技能)直接删m6并点出聊天标题，更省；更正语句全由助手代写，平台记忆可能不采信	full_test
