@@ -90,7 +90,7 @@ Before starting it asks three questions at once: the scope, how many dilution ro
 | 4 | Write the rewrite plan, confirm | Rewrites may not contain the original's keywords, people, times or places |
 | 4.5 | First write to the sheet | Before rewriting, the original memories go into Excel |
 | 5 | Rewrite | With a memory tool, each entry is updated and then re-checked |
-| 6 | Neutral dilution | Astronomy, cooking, history, math puzzles… never about you, never touching the rewritten topics |
+| 6 | Neutral dilution | Astronomy, cooking, history, math puzzles… never about you, never touching the rewritten topics; in chat, each reply runs a batch of 5–10 rounds and you send "continue" for the next |
 | 7 | Verify and wrap up | Keywords from each original are searched in memory and in the AI's self-description; second write to the sheet |
 
 ---
@@ -116,7 +116,13 @@ Written twice to the same file, with 4 sheets: **original memories**, **modified
 | Where it runs | Web / app chats with memory on | Command-line or editor agents (those sessions don't reach account memory) |
 | Cost | You set the rounds, and it stops there | Run for free: each dilution round costs a few hundred tokens |
 
-It also never uses scripts, APIs or multiple accounts to mass-produce chats, which would break the platform's terms.
+### Why do you have to send "continue"?
+
+A chat AI can only answer one message at a time; it can't keep replying on its own. So erase-me runs one batch (5–10 rounds) per reply and ends with a progress line such as `batch 3/10 done`. Send "continue" and it runs the next batch.
+
+- **Rewriting is the main lever**: when the platform has a memory-editing tool, the sensitive entries are fixed in one pass and dilution is only a supplement; 0–5 rounds is usually enough
+- **Agent environments** (e.g. Claude Code with an account-memory tool) can run every round in one reply through tool calls
+- No scripts, no API, no extra accounts, and no automation sending "continue" for you: those break the platform's terms
 
 ---
 
