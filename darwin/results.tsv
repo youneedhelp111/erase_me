@@ -10,3 +10,6 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-10-25T13:15	-	erase-me	-	-	spec	需求变更	用户新需求：只处理云端、删除本地 Python 扫描器、C 模式用虚构身份多轮循环覆盖（上限 100 轮）；旧 rubric 结果不再适用	-
 2026-10-25T13:30	-	erase-me	-	-	spec	需求变更	用户实测反馈：改为渐进漂移（每轮微调上一轮档案、强隐私事件逐级降级后删除）；第 1 步强制先真删聊天和记忆	-
 2026-10-25T13:45	baseline-v3	erase-me	-	72.2	baseline	-	渐进漂移版基线。短板(加权):dim8实测9.2 dim3失败模式4.8。T1停在第1步✓；T3(B)逐级降级后删除✓；T2(C)漂移3轮✓但用户说"删好了"后敏感条目仍在、技能未要求核对；对照组(无技能)直接删m6并点出聊天标题，更省；更正语句全由助手代写，平台记忆可能不采信	full_test
+2026-10-25T14:05	2bf9bea	erase-me	72.2	3-0 better(clear×3)	keep	dim8	核对"删好了"、有工具时助手直接删、提醒聊天标题、用户亲自发更正	paired
+2026-10-25T14:05	7df42aa	erase-me	-	3-0 better(slight×3)	keep	dim5	性格字段按内容定级、混合条目拆字段、B 少量事件可直接删；评审指出"收入"归一般与身份字段冲突→随后修掉	paired
+2026-10-25T14:05	9f154bc	erase-me	-	2-0-1 better(slight×2 tie×1)	keep	dim3	4 行出错分支；首行与第 4 步重复；连续 slight→HL-4 见好就收	paired
