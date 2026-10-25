@@ -40,17 +40,19 @@ description: 帮用户审查并清理 AI 助手关于他们本人保存的记忆
 
 ### 第 1 步：盘点
 
-运行只读扫描器，看本机有哪些存储：
+运行只读扫描器，看本机有哪些存储。`<skill_dir>` 是本 SKILL.md 所在目录：
 
 ```bash
-python scripts/scan_memory.py
+python <skill_dir>/scripts/scan_memory.py
 ```
 
 如果用户已经说了要忘掉什么（比如"前任的名字""我抑郁的事"），加关键词：
 
 ```bash
-python scripts/scan_memory.py -k 关键词1 -k 关键词2
+python <skill_dir>/scripts/scan_memory.py -k 关键词1 -k 关键词2
 ```
+
+扫描器覆盖 Claude Code、Codex、Gemini CLI、Cursor 的默认位置。当前助手的记忆存在别处时，按该助手的文档找到位置再手动读取。
 
 同时检查当前会话有没有记忆工具，有就调用它的"查看全部"接口。
 

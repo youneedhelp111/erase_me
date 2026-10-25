@@ -35,11 +35,25 @@
 
 ## 安装
 
-把仓库克隆到你所用工具的 skills 目录，例如：
+它是标准的 Agent Skill，任何支持 `SKILL.md` 的助手都能用。
+
+**一行安装（自动识别你在用的工具）：**
 
 ```bash
-git clone https://github.com/youneedhelp111/erase_me ~/.claude/skills/erase-me
+npx skills add youneedhelp111/erase_me
 ```
+
+**手动安装：** 把仓库克隆到对应工具的 skills 目录，目录名用 `erase-me`。
+
+| 工具 | 用户级 skills 目录 |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex | `~/.codex/skills/` |
+| Cursor | `~/.cursor/skills/` |
+| Gemini CLI | `~/.gemini/skills/` |
+| 其他 | 查看该工具文档里的 skills 路径 |
+
+**不想安装：** 直接把 `SKILL.md` 的内容贴给助手，让它照着做也行。
 
 ## 使用
 

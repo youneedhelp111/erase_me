@@ -1,1 +1,2 @@
 timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-10-25T12:20	baseline	erase-me	-	61.3	baseline	-	短板(加权):dim3失败模式8.4 dim5具体性7.2 dim8实测6.9 dim9黑名单4.2；runtime_warn=1(README安装路径只给~/.claude)；P1 with-skill优于baseline(保留了"低落时语气温和"偏好，baseline连文件一起删了)；P1残留MEMORY.md索引"情绪—心理状态"；P2/P3按流程停在确认点	full_test
