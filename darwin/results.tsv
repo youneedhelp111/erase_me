@@ -14,3 +14,4 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-10-25T14:05	7df42aa	erase-me	-	3-0 better(slight×3)	keep	dim5	性格字段按内容定级、混合条目拆字段、B 少量事件可直接删；评审指出"收入"归一般与身份字段冲突→随后修掉	paired
 2026-10-25T14:05	9f154bc	erase-me	-	2-0-1 better(slight×2 tie×1)	keep	dim3	4 行出错分支；首行与第 4 步重复；连续 slight→HL-4 见好就收	paired
 2026-10-25T14:20	466ea67	erase-me	-	-	retest	dim8	复测 T2：第 1 步直接删掉强隐私条目并复查✓，漂移 3 轮✓；T3：B 模式识别性格标签为强隐私、给出直接删选项✓。据复测补两处说明：更正由谁发、已删事件不再编降级事件；档案里强隐私只写"不复述"	full_test
+2026-10-25T14:55	-	erase-me	-	-	retest	Excel	接入 Excel 两次写入；沙盒全流程：漂移前 init 7 条、跑完 finalize，核验 10 项残留 0；Excel 打开 4 表正常；据复测补字段与引号说明	full_test
