@@ -74,6 +74,9 @@ def grep(path, keywords):
 
 
 def main():
+    # Windows 控制台/管道默认 GBK，会把中文输出成乱码；统一用 UTF-8
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("-k", "--keyword", action="append", default=[], help="要查找的关键词，可重复")
     ap.add_argument("--root", help="额外扫描的项目目录")
