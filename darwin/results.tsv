@@ -5,3 +5,5 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-10-25T12:35	393cd45	erase-me	-	3-0 better(clear×2 slight×1)	keep	dim8	按措辞推断模式再确认；清理索引/文件名/描述/空目录残留	paired
 2026-10-25T12:35	0898fb1	erase-me	-	3-0 better(slight×3)	keep	dim9	不要做清单（含禁止 rm -rf 整个 ~/.claude）；连续 slight→HL-4 见好就收	paired
 2026-10-25T12:40	c16a141	erase-me	-	-	spec	需求变更	用户新需求：先问清需求+云端自问自答稀释；非优化轮，不走 paired，走 full_test 复测	-
+2026-10-25T12:55	718a142	erase-me	-	2-0 better(clear×1 slight×1，第3票未返回不影响多数)	keep	dim2	复测发现：6.4 应前置为 6.0；待你决定/好坏混合文件规则；A/C 含使用痕迹	paired
+2026-10-25T12:55	full_test	erase-me	-	-	retest	dim8	P1 通过(保留语气偏好、清索引)；P2 只问不改、diff 为空；P3 本地部分通过，稀释阶段测试 agent 被平台安全过滤中断两次	full_test

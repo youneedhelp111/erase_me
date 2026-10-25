@@ -80,6 +80,10 @@ python scripts/scan_memory.py -k 关键词
 python scripts/scan_memory.py --json
 ```
 
+## 进化记录
+
+这个技能用 [darwin-skill](https://github.com/alchaincyf/darwin-skill) 的流程优化过：沙盒里用假记忆跑测试，每轮改动由 3 个独立评审盲比改前改后，多数判好才保留。每一轮的结果在 [darwin/results.tsv](darwin/results.tsv)，测试用例在 [test-prompts.json](test-prompts.json)。
+
 ## 许可
 
 MIT
