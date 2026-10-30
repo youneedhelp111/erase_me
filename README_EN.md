@@ -18,28 +18,25 @@ Your AI assistant may remember everything you ever told it. erase-me works insid
 [![Darwin Optimized](https://img.shields.io/badge/Darwin.skill-Optimized-orange)](https://github.com/alchaincyf/darwin-skill)
 [![No Fabrication](https://img.shields.io/badge/rewrites-generalize%2C_never_invent-lightgrey)](#five-principles)
 
-```
-npx skills add youneedhelp111/erase_me
-```
 
 </div>
 
 ---
 
-> [!IMPORTANT]
-> **The honest part first: dilution is not deletion.** Server logs, backups and any chats you haven't deleted are still there, and the platform decides what it finally remembers. erase-me rewrites memory entries and dilutes context; it does its best, with no guarantee. For real deletion, also delete chats and memories in the platform's settings, or file a request under the provider's privacy policy.
+> **Dilution is not deletion.** Server logs, backups and any chats you haven't deleted are still there, and the platform decides what it finally remembers. erase-me rewrites memory entries and dilutes context; it does its best, with no guarantee. For real deletion, also delete chats and memories in the platform's settings, or file a request under the provider's privacy policy.
 
 ---
 
 ## At a glance
 
 ```
-read memory → rate each entry → you confirm → rewrite, never delete → neutral dilution → keyword check → comparison sheet
+read memory → rate → confirm → rewrite, never delete → neutral dilution → keyword check → comparison sheet
 ```
 
 | Before (only in your own comparison sheet) | After (what the AI remembers) |
 |:---|:---|
-| Asked late at night about testing for a specific condition, and said why | Asked a health-related question |
+| Asked late at night about testing for a (sexually transmitted) disease because of **an affair**, and said why | Asked a health-related question |
+| Is into muscular guys with big pecs | Is attracted to men |
 | Anxious personality, keeps double-checking | Fairly careful |
 | Earns about 300k a year | Has a work income |
 
@@ -50,6 +47,8 @@ What goes: the condition, the reason, the time, the psychological label, the amo
 ## Why this exists
 
 Most AI assistants now have "memory". A question you asked one night, an income you mentioned in passing, something you said at a low point: any of it may be remembered and come back in later conversations.
+
+**Most importantly, every memory can be drawn out just by asking in a conversation.**
 
 Platforms usually give you two choices: keep everything, or delete entries one by one by hand. Deleted entries leave gaps, and the AI may still infer the original from what's left around them.
 
@@ -137,6 +136,8 @@ npx skills add youneedhelp111/erase_me
 ```
 
 **Platforms without skills** (e.g. ChatGPT): open a new chat, paste the full `SKILL.md`, and say "follow this".
+
+**Doubao**: switch to work mode and give it the downloaded zip.
 
 Then, in a chat with memory on, say:
 
