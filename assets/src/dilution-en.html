@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>erase-me.skill dilution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px; height: 480px; background: #111111; overflow: hidden;
+    font-family: 'Inter', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    color: #FFFFFF; -webkit-font-smoothing: antialiased;
+  }
+  .label { color: #D4532B; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  .label .sub { color: #666; font-weight: 600; letter-spacing: 0.5px; text-transform: none; margin-left: 14px; font-size: 12px; }
+  .foot { position: absolute; bottom: 22px; left: 48px; right: 48px; display: flex; justify-content: space-between;
+          font-size: 10px; font-weight: 600; letter-spacing: 1px; color: #3a3a3a; }
+  .redact { display: inline-block; background: #3a3a3a; height: 0.95em; vertical-align: -0.12em; border-radius: 1px; }
+
+  .l { position:absolute; left:48px; top:44px; width:400px; }
+  .l h2 { font-size:46px; font-weight:900; letter-spacing:-1px; line-height:1.1; margin-top:26px; }
+  .l h2 span { color:#D4532B; }
+  .l p { font-size:14px; line-height:1.75; color:#999; margin-top:22px; }
+  .lever { margin-top:26px; border-left:3px solid #D4532B; padding:4px 0 4px 16px; font-size:13px; line-height:1.7; color:#BBB; }
+  .lever b { display:block; color:#FFF; font-size:14px; }
+  .m { position:absolute; left:500px; top:44px; width:300px; }
+  .m .t { font-size:12px; font-weight:700; color:#DDD; margin-top:0; }
+  .m .t i { font-style:normal; color:#555; font-weight:600; margin-left:8px; font-size:10px; letter-spacing:1px; text-transform:uppercase; }
+  .bars { display:flex; gap:34px; margin-top:22px; align-items:flex-end; }
+  .bar { width:62px; height:220px; display:flex; flex-direction:column-reverse; }
+  .bar div { width:100%; }
+  .lab { display:flex; gap:34px; margin-top:10px; }
+  .lab span { width:62px; text-align:center; font-size:11px; font-weight:600; color:#777; }
+  .leg { margin-top:18px; display:flex; flex-direction:column; gap:6px; font-size:11px; color:#888; }
+  .leg span:before { content:''; display:inline-block; width:10px; height:10px; margin-right:8px; vertical-align:-1px; background:var(--c); }
+  .vr { position:absolute; left:842px; top:60px; width:1px; height:340px; background:rgba(255,255,255,.08); }
+  .r { position:absolute; left:876px; top:44px; width:280px; }
+  .r ul { list-style:none; margin-top:18px; }
+  .r li { font-size:15px; font-weight:700; padding:11px 0; border-bottom:1px solid #222; display:flex; align-items:center; gap:12px; }
+  .r li:before { content:'●'; color:#C92A2A; font-size:9px; }
+  .real { margin-top:26px; background:#FFF; color:#111; padding:16px 18px; }
+  .real b { display:block; font-size:12px; font-weight:800; letter-spacing:1px; color:#D4532B; text-transform:uppercase; }
+  .real div { font-size:13px; font-weight:600; line-height:1.6; margin-top:6px; }
+
+</style>
+</head>
+<body>
+
+<div class="l">
+  <div class="label">DILUTION ≠ DELETION</div>
+  <h2>Dilution is not deletion<span>.</span></h2>
+  <p>erase-me rewrites memory entries and dilutes context. It does its best, with no guarantee. The platform decides what it finally remembers.</p>
+  <div class="lever"><b>Rewriting does the heavy lifting</b>With a memory editing tool, sensitive entries are fixed in one pass. Dilution is extra: 0–5 rounds is usually enough.</div>
+</div>
+<div class="m">
+  <div class="label">Account memory<span class="sub" style="font-size:10px;letter-spacing:1px;text-transform:uppercase">illustrative</span></div>
+  <div class="bars"><div class="bar"><div style="height:55%;background:#D4532B;border-top:2px solid #111"></div><div style="height:45%;background:#3a3a3a;border-top:2px solid #111"></div></div><div class="bar"><div style="height:55%;background:#FFFFFF;border-top:2px solid #111"></div><div style="height:45%;background:#3a3a3a;border-top:2px solid #111"></div></div><div class="bar"><div style="height:25%;background:#FFFFFF;border-top:2px solid #111"></div><div style="height:75%;background:#3a3a3a;border-top:2px solid #111"></div></div></div>
+  <div class="lab"><span>Before</span><span>Rewritten</span><span>Diluted</span></div>
+  <div class="leg"><span style="--c:#D4532B">specific details</span><span style="--c:#FFFFFF">vague statements</span><span style="--c:#3a3a3a">neutral topics</span></div>
+</div>
+<div class="vr"></div>
+<div class="r">
+  <div class="label" style="color:#C92A2A">Still there</div>
+  <ul><li>Server logs</li><li>Backups</li><li>Chats you haven't deleted</li><li>Chat titles themselves</li></ul>
+  <div class="real"><b>For real deletion</b><div>Delete chats and memories in the platform's settings, or file a request under the provider's privacy policy.</div></div>
+</div>
+<div class="foot"><span>erase-me.skill</span><span>AI MEMORY PRIVACY CLEANUP</span></div>
+
+</body>
+</html>

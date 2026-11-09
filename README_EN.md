@@ -6,6 +6,8 @@ English | **[中文](README.md)**
 
 <div align="center">
 
+<img src="assets/hero-en.png" alt="erase-me.skill" width="100%" />
+
 # erase-me.skill
 
 **Make your AI forget you. No deleting, just sanding the details off.**
@@ -24,6 +26,8 @@ Your AI assistant may remember everything you ever told it. erase-me works insid
 ---
 
 > **Dilution is not deletion.** Server logs, backups and any chats you haven't deleted are still there, and the platform decides what it finally remembers. erase-me rewrites memory entries and dilutes context; it does its best, with no guarantee. For real deletion, also delete chats and memories in the platform's settings, or file a request under the provider's privacy policy.
+
+![Dilution is not deletion](assets/dilution-en.png)
 
 ---
 
@@ -44,6 +48,8 @@ read memory → rate → confirm → rewrite, never delete → neutral dilution 
 | Earns about 300k a year | Has a work income |
 
 What goes: the condition, the reason, the time, the psychological label, the amount. Every sentence that stays is still true.
+
+![Before and after](assets/rewrite-en.png)
 
 ---
 
@@ -83,6 +89,8 @@ Before starting it asks three questions at once: the scope, how many dilution ro
 ---
 
 ## The full flow: 7 steps
+
+![7-step workflow](assets/workflow-en.png)
 
 | Step | What happens | Key point |
 |:---|:---|:---|

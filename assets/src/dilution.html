@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>erase-me.skill dilution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px; height: 480px; background: #111111; overflow: hidden;
+    font-family: 'Inter', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    color: #FFFFFF; -webkit-font-smoothing: antialiased;
+  }
+  .label { color: #D4532B; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  .label .sub { color: #666; font-weight: 600; letter-spacing: 0.5px; text-transform: none; margin-left: 14px; font-size: 12px; }
+  .foot { position: absolute; bottom: 22px; left: 48px; right: 48px; display: flex; justify-content: space-between;
+          font-size: 10px; font-weight: 600; letter-spacing: 1px; color: #3a3a3a; }
+  .redact { display: inline-block; background: #3a3a3a; height: 0.95em; vertical-align: -0.12em; border-radius: 1px; }
+
+  .l { position:absolute; left:48px; top:44px; width:400px; }
+  .l h2 { font-size:46px; font-weight:900; letter-spacing:-1px; line-height:1.1; margin-top:26px; }
+  .l h2 span { color:#D4532B; }
+  .l p { font-size:14px; line-height:1.75; color:#999; margin-top:22px; }
+  .lever { margin-top:26px; border-left:3px solid #D4532B; padding:4px 0 4px 16px; font-size:13px; line-height:1.7; color:#BBB; }
+  .lever b { display:block; color:#FFF; font-size:14px; }
+  .m { position:absolute; left:500px; top:44px; width:300px; }
+  .m .t { font-size:12px; font-weight:700; color:#DDD; margin-top:0; }
+  .m .t i { font-style:normal; color:#555; font-weight:600; margin-left:8px; font-size:10px; letter-spacing:1px; text-transform:uppercase; }
+  .bars { display:flex; gap:34px; margin-top:22px; align-items:flex-end; }
+  .bar { width:62px; height:220px; display:flex; flex-direction:column-reverse; }
+  .bar div { width:100%; }
+  .lab { display:flex; gap:34px; margin-top:10px; }
+  .lab span { width:62px; text-align:center; font-size:11px; font-weight:600; color:#777; }
+  .leg { margin-top:18px; display:flex; flex-direction:column; gap:6px; font-size:11px; color:#888; }
+  .leg span:before { content:''; display:inline-block; width:10px; height:10px; margin-right:8px; vertical-align:-1px; background:var(--c); }
+  .vr { position:absolute; left:842px; top:60px; width:1px; height:340px; background:rgba(255,255,255,.08); }
+  .r { position:absolute; left:876px; top:44px; width:280px; }
+  .r ul { list-style:none; margin-top:18px; }
+  .r li { font-size:15px; font-weight:700; padding:11px 0; border-bottom:1px solid #222; display:flex; align-items:center; gap:12px; }
+  .r li:before { content:'●'; color:#C92A2A; font-size:9px; }
+  .real { margin-top:26px; background:#FFF; color:#111; padding:16px 18px; }
+  .real b { display:block; font-size:12px; font-weight:800; letter-spacing:1px; color:#D4532B; text-transform:uppercase; }
+  .real div { font-size:13px; font-weight:600; line-height:1.6; margin-top:6px; }
+
+</style>
+</head>
+<body>
+
+<div class="l">
+  <div class="label">DILUTION ≠ DELETION</div>
+  <h2>稀释不是删除<span>.</span></h2>
+  <p>erase-me 能做的是改写记忆条目、冲淡上下文，效果只能尽量。平台最终记住什么，由平台决定。</p>
+  <div class="lever"><b>改写才是主力</b>平台有记忆编辑工具时，敏感条目一次就改完，稀释只是补充，建议 0–5 轮就够。</div>
+</div>
+<div class="m">
+  <div class="label">账号记忆的构成<span class="sub" style="font-size:10px;letter-spacing:1px;text-transform:uppercase">示意</span></div>
+  <div class="bars"><div class="bar"><div style="height:55%;background:#D4532B;border-top:2px solid #111"></div><div style="height:45%;background:#3a3a3a;border-top:2px solid #111"></div></div><div class="bar"><div style="height:55%;background:#FFFFFF;border-top:2px solid #111"></div><div style="height:45%;background:#3a3a3a;border-top:2px solid #111"></div></div><div class="bar"><div style="height:25%;background:#FFFFFF;border-top:2px solid #111"></div><div style="height:75%;background:#3a3a3a;border-top:2px solid #111"></div></div></div>
+  <div class="lab"><span>改写前</span><span>改写后</span><span>稀释后</span></div>
+  <div class="leg"><span style="--c:#D4532B">具体细节</span><span style="--c:#FFFFFF">笼统说法</span><span style="--c:#3a3a3a">中性话题</span></div>
+</div>
+<div class="vr"></div>
+<div class="r">
+  <div class="label" style="color:#C92A2A">仍然存在</div>
+  <ul><li>服务器日志</li><li>备份</li><li>你没删的聊天记录</li><li>聊天标题本身</li></ul>
+  <div class="real"><b>要彻底删除</b><div>去平台设置里删聊天、删记忆，或按服务商隐私政策申请。</div></div>
+</div>
+<div class="foot"><span>erase-me.skill</span><span>AI 记忆隐私清理</span></div>
+
+</body>
+</html>

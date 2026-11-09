@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>erase-me.skill hero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px; height: 400px; background: #111111; overflow: hidden;
+    font-family: 'Inter', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    color: #FFFFFF; -webkit-font-smoothing: antialiased;
+  }
+  .label { color: #D4532B; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  .label .sub { color: #666; font-weight: 600; letter-spacing: 0.5px; text-transform: none; margin-left: 14px; font-size: 12px; }
+  .foot { position: absolute; bottom: 22px; left: 48px; right: 48px; display: flex; justify-content: space-between;
+          font-size: 10px; font-weight: 600; letter-spacing: 1px; color: #3a3a3a; }
+  .redact { display: inline-block; background: #3a3a3a; height: 0.95em; vertical-align: -0.12em; border-radius: 1px; }
+
+  .rule-v { position:absolute; left:60px; top:48px; width:3px; height:304px; background:#D4532B; }
+  .rule-t { position:absolute; left:60px; top:48px; width:740px; height:2px; background:rgba(255,255,255,.15); }
+  .rule-b { position:absolute; left:60px; top:350px; width:740px; height:1px; background:rgba(255,255,255,.15); }
+  .left { position:absolute; left:84px; top:68px; width:720px; }
+  h1 { font-size:84px; font-weight:900; letter-spacing:-2px; line-height:1; margin-top:18px; }
+  h1 em { font-style:normal; color:#D4532B; }
+  .cap { font-size:13px; font-weight:500; letter-spacing:4px; color:#888; margin-top:12px; }
+  .sub { font-size:24px; font-weight:700; margin-top:18px; }
+  .tag { font-size:15px; color:#AAA; margin-top:8px; }
+  .data { font-size:14px; color:#AAA; margin-top:16px; }
+  .data b { color:#D4532B; font-weight:700; }
+  .data i { font-style:normal; color:#555; margin:0 8px; }
+  .hfoot { position:absolute; left:84px; top:362px; font-size:12px; color:#666; letter-spacing:.3px; }
+  .right { position:absolute; left:850px; top:76px; width:300px; }
+  .divider { position:absolute; left:828px; top:110px; width:1px; height:220px; background:rgba(255,255,255,.08); }
+  .card-b { margin-top:18px; border:1px dashed #444; padding:14px 16px; font-size:13px; line-height:1.8; color:#777; text-decoration:line-through; text-decoration-color:rgba(212,83,43,.6); }
+  .arrow { height:38px; position:relative; }
+  .arrow:before { content:''; position:absolute; left:28px; top:6px; width:2px; height:20px; background:#D4532B; }
+  .arrow:after { content:''; position:absolute; left:23px; top:24px; border:6px solid transparent; border-top:8px solid #D4532B; }
+  .arrow span { position:absolute; left:48px; top:10px; font-size:10px; font-weight:700; letter-spacing:2px; color:#D4532B; }
+  .card-a { background:#FFF; color:#111; padding:16px; font-size:15px; font-weight:800; }
+  .chips { margin-top:14px; display:flex; gap:8px; }
+  .chip { font-size:11px; font-weight:700; color:#D4532B; border:1px solid rgba(212,83,43,.6); padding:3px 8px; }
+
+</style>
+</head>
+<body>
+
+<div class="rule-v"></div><div class="rule-t"></div><div class="rule-b"></div>
+<div class="left">
+  <div class="label">AGENT SKILL · AI MEMORY PRIVACY</div>
+  <h1>erase-me<em>.</em>skill</h1>
+  <div class="cap">ERASE · ME</div>
+  <div class="sub">让 AI 忘掉你</div>
+  <div class="tag">不删记录，只把细节磨平。</div>
+  <div class="data"><b>只改不删</b><i>·</i><b>只概括不编造</b><i>·</i><b>确认才动手</b><i>·</i><b>MIT</b> 开源</div>
+</div>
+<div class="hfoot">说过的话收不回来，但可以让它变得不再具体。</div>
+<div class="divider"></div>
+<div class="right">
+  <div class="label">MEMORY · m6</div>
+  <div class="card-b">三天前深夜咨询过 <span class="redact" style="width:62px"></span> 的问题，还说了起因 <span class="redact" style="width:46px"></span></div>
+  <div class="arrow"><span>REWRITE · 往上概括</span></div>
+  <div class="card-a">咨询过一个健康方面的问题</div>
+  <div class="chips"><span class="chip">− 病种</span><span class="chip">− 起因</span><span class="chip">− 时间</span></div>
+</div>
+
+</body>
+</html>

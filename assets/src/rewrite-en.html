@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>erase-me.skill before/after</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px; height: 520px; background: #111111; overflow: hidden;
+    font-family: 'Inter', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    color: #FFFFFF; -webkit-font-smoothing: antialiased;
+  }
+  .label { color: #D4532B; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  .label .sub { color: #666; font-weight: 600; letter-spacing: 0.5px; text-transform: none; margin-left: 14px; font-size: 12px; }
+  .foot { position: absolute; bottom: 22px; left: 48px; right: 48px; display: flex; justify-content: space-between;
+          font-size: 10px; font-weight: 600; letter-spacing: 1px; color: #3a3a3a; }
+  .redact { display: inline-block; background: #3a3a3a; height: 0.95em; vertical-align: -0.12em; border-radius: 1px; }
+
+  .wrap { position:absolute; left:48px; top:44px; right:48px; }
+  .head, .row { display:grid; grid-template-columns: 430px 56px 380px 1fr; align-items:stretch; }
+  .head { margin-top:34px; font-size:10px; font-weight:700; letter-spacing:1.5px; color:#555; text-transform:uppercase; }
+  .head div { padding-bottom:10px; }
+  .row { margin-top:14px; }
+  .b { border:1px dashed #3a3a3a; padding:0 18px; height:62px; display:flex; align-items:center; font-size:14px; color:#777;
+        text-decoration:line-through; text-decoration-color:rgba(212,83,43,.55); }
+  .ar { display:flex; align-items:center; justify-content:center; }
+  .ar svg { display:block; }
+  .a { background:#FFF; color:#111; padding:0 18px; height:62px; display:flex; align-items:center; font-size:15px; font-weight:800; }
+  .rm { display:flex; align-items:center; gap:6px; flex-wrap:wrap; padding-left:20px; }
+  .chip { font-size:11px; font-weight:700; color:#D4532B; border:1px solid rgba(212,83,43,.6); padding:3px 8px; white-space:nowrap; }
+  .rule { margin-top:30px; font-size:13px; color:#888; }
+  .rule b { color:#DDD; font-weight:700; }
+  .rule s { color:#888; text-decoration-color:#D4532B; }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="label">BEFORE → AFTER<span class="sub">Rewrites only generalize. Every sentence that stays is still true.</span></div>
+  <div class="head"><div>Before · only in your local sheet</div><div></div><div>After · what the AI remembers</div><div style="padding-left:20px">Removed</div></div>
+  <div class="row"><div class="b">Asked late at night about <span class="redact" style="width:54px"></span> testing, and said why</div><div class="ar"><svg width="40" height="12"><line x1="2" y1="6" x2="30" y2="6" stroke="#D4532B" stroke-width="2"/><polygon points="28,0 40,6 28,12" fill="#D4532B"/></svg></div><div class="a">Asked a health-related question</div><div class="rm"><span class="chip">− condition</span><span class="chip">− reason</span><span class="chip">− time</span></div></div><div class="row"><div class="b">Secretly checked partner's phone a day ago</div><div class="ar"><svg width="40" height="12"><line x1="2" y1="6" x2="30" y2="6" stroke="#D4532B" stroke-width="2"/><polygon points="28,0 40,6 28,12" fill="#D4532B"/></svg></div><div class="a">Has some issues with them over everyday things</div><div class="rm"><span class="chip">− action</span><span class="chip">− time</span></div></div><div class="row"><div class="b">Anxious personality, keeps double-checking</div><div class="ar"><svg width="40" height="12"><line x1="2" y1="6" x2="30" y2="6" stroke="#D4532B" stroke-width="2"/><polygon points="28,0 40,6 28,12" fill="#D4532B"/></svg></div><div class="a">Fairly careful</div><div class="rm"><span class="chip">− psych label</span></div></div><div class="row"><div class="b">Earns about 300k a year</div><div class="ar"><svg width="40" height="12"><line x1="2" y1="6" x2="30" y2="6" stroke="#D4532B" stroke-width="2"/><polygon points="28,0 40,6 28,12" fill="#D4532B"/></svg></div><div class="a">Has a work income</div><div class="rm"><span class="chip">− amount</span></div></div>
+  <div class="rule">Adds no new facts: <b>“asked a health question”</b> ✓ &nbsp;&nbsp; <s>“asked about a cold”</s> ✗ that's made up</div>
+</div>
+<div class="foot"><span>erase-me.skill</span><span>AI MEMORY PRIVACY CLEANUP</span></div>
+
+</body>
+</html>
