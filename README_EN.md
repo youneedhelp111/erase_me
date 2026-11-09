@@ -37,6 +37,7 @@ read memory → rate → confirm → rewrite, never delete → neutral dilution 
 |:---|:---|
 | Asked late at night about testing for a (sexually transmitted) disease because of **an affair**, and said why | Asked a health-related question |
 | Unprotected sex, period is late, worried about pregnancy | Asked why a period was delayed after catching a cold |
+| Is into bare feet and white stockings | Is attracted to women |
 | Is into muscular guys with big pecs | Is attracted to men |
 | Secretly checked partner's phone a day ago, doesn't trust them | Has some issues with them over everyday things |
 | Anxious personality, keeps double-checking | Fairly careful |
