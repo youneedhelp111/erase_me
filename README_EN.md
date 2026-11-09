@@ -36,7 +36,9 @@ read memory → rate → confirm → rewrite, never delete → neutral dilution 
 | Before (only in your own comparison sheet) | After (what the AI remembers) |
 |:---|:---|
 | Asked late at night about testing for a (sexually transmitted) disease because of **an affair**, and said why | Asked a health-related question |
+| Unprotected sex, period is late, worried about pregnancy | Asked why a period was delayed after catching a cold |
 | Is into muscular guys with big pecs | Is attracted to men |
+| Secretly checked partner's phone a day ago, doesn't trust them | Has some issues with them over everyday things |
 | Anxious personality, keeps double-checking | Fairly careful |
 | Earns about 300k a year | Has a work income |
 
